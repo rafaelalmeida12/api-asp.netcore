@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using projetoRafael.Data;
 using projetoRafael.Models;
 
@@ -49,6 +50,7 @@ namespace projetoRafael.Controllers
                 return BadRequest(new {mensagem="erro ao adicionar categoria"+ categoria});
             }
         }
+
        ///<summary>
        /// Buscar Categoria por ID
        ///</summary>
@@ -61,6 +63,7 @@ namespace projetoRafael.Controllers
             .FirstOrDefault(c=>c.Id==id);
             return  Ok(categoria);
         } 
+
        ///<summary>
        /// Alterar Categoria
        ///</summary>
@@ -81,6 +84,7 @@ namespace projetoRafael.Controllers
            
             return  Ok(categoriaBanco);
         }
+
         ///<summary>
        /// Excluir Categoria
        ///</summary>
@@ -90,9 +94,16 @@ namespace projetoRafael.Controllers
         public IActionResult Deletar([FromServices]Contexto context,int id)
         {
             var categoria = context.Categorias
-            .FirstOrDefault(c=>c.Id==id); 
-//verificar se tem um produto cadastrado para categoria 
-//voce nao pode excluir uma categoria que possui produto
+               .FirstOrDefault(c=>c.Id==id); 
+            
+             var produtos = context.Produtos.Include(c=>c.Categoria)
+                .Where(c=>c.CategoriaId==id)
+                .ToList();
+
+                if(produtos.Count!=0)
+                {
+                   return NotFound(new {mensagem="voce nao pode excluir uma categoria que possui produto"});
+                }
             context.Categorias.Remove(categoria);
             context.SaveChanges();
             

@@ -16,7 +16,7 @@ namespace projetoRafael.Models
         
         [Required(ErrorMessage="Este campo é obrigatório")]
         public int CategoriaId { get; set; }
-       // [JsonIgnore]
+        [JsonIgnore]
         public Categoria Categoria  { get; set; }
     }
 }
