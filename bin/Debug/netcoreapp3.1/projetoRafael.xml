@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>projetoRafael</name>
+    </assembly>
+    <members>
+        <member name="M:projetoRafael.Controllers.CategoriaController.Index(projetoRafael.Data.Contexto)">
+            <summary>
+             Listar Categorias
+            </summary>
+            <response code="200"> Categorias sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.CategoriaController.Adicionar(projetoRafael.Data.Contexto,projetoRafael.Models.Categoria)">
+            <summary>
+             Adicionar Nova Categoria
+            </summary>
+            <response code="200"> Categoria adicionado com sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.CategoriaController.BuscarPorId(projetoRafael.Data.Contexto,System.Int32)">
+            <summary>
+             Buscar Categoria por ID
+            </summary>
+            <response code="200"> Categoria  sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.CategoriaController.Alterar(projetoRafael.Data.Contexto,projetoRafael.Models.Categoria,System.Int32)">
+            <summary>
+             Alterar Categoria
+            </summary>
+            <response code="200"> Categoria alterada com sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.CategoriaController.Deletar(projetoRafael.Data.Contexto,System.Int32)">
+            <summary>
+             Excluir Categoria
+            </summary>
+            <response code="200"> Categoria excluido com sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.ProdutoController.Index(projetoRafael.Data.Contexto)">
+            <summary>
+             Listar Produtos
+            </summary>
+            <response code="200"> Produtos sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.ProdutoController.Adicionar(projetoRafael.Data.Contexto,projetoRafael.Models.Produto)">
+            <summary>
+             Adicionar Novo Produto
+            </summary>
+            <response code="200"> Produto adicionado com sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.ProdutoController.BuscarPorId(projetoRafael.Data.Contexto,System.Int32)">
+            <summary>
+             Buscar Produto por ID
+            </summary>
+            <response code="200"> Produto  sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.ProdutoController.BuscarPorCategoriaId(projetoRafael.Data.Contexto,System.Int32)">
+            <summary>
+             Buscar Produto por Categoria ID
+            </summary>
+            <response code="200"> Produto  sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.ProdutoController.Alterar(projetoRafael.Data.Contexto,System.Int32)">
+            <summary>
+             Alterar Produto
+            </summary>
+            <response code="200"> Produto alterado com sucesso.</response>
+        </member>
+        <member name="M:projetoRafael.Controllers.ProdutoController.Deletar(projetoRafael.Data.Contexto,System.Int32)">
+            <summary>
+             Excluir Produto
+            </summary>
+            <response code="200"> Produto excluido com sucesso.</response>
+        </member>
+    </members>
+</doc>
