@@ -20,6 +20,7 @@ Create (Criação), Read (Consulta), Update (Atualização) e Delete (Destruiç�
 ## Passo-a-Passo
 
 A api esta hospeda em um servidor Azure: https://apirafaelalmeida.azurewebsites.net/.
+Tem uma imagem na api disponivel no Docker Hub :
  Exemplo: Adicionar Categoria
 ```{json}
 {
