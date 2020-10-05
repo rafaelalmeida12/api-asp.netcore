@@ -12,16 +12,28 @@ Create (Criação), Read (Consulta), Update (Atualização) e Delete (Destruiç�
  - [Entity Framework 3.1](https://docs.microsoft.com/pt-br/ef/)-ORM utilizado para fazer a ligação entre a aplicação e o banco de dados.
  - [Swagger 3.0](https://swagger.io/docs/specification/about/,)-Framework utilizado para gerar a documentação da api.
  - [Mvc]()-Padrão de programação em camadas (Model,View,Controller)
- - [Docker Hub]()- O projeto foi hospedado na plataforma.
+ - [Docker Hub](https://hub.docker.com/repository/docker/rafaelalmeidadev/projetorafael)- O projeto foi hospedado na plataforma.
  - [Style Guide:](https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/inside-a-program/coding-conventions) C# Style Guide.
 
 # Como Rodar
 
 ## Passo-a-Passo
 
-A api esta hospeda em um servidor Azure: https://apirafaelalmeida.azurewebsites.net/.
-Tem uma imagem na api disponivel no Docker Hub :
- Exemplo: Adicionar Categoria
+### Opção 01:
+A api está hospedada na plataforma heroku: http://apirafaelalmeida.herokuapp.com/index.html 
+
+
+### Opção 02:
+A api esta hospeda em um servidor Azure: https://apirafaelalmeida.azurewebsites.net/
+
+### Opção 03:
+O Projeto está hospedado no git hub :
+- Baixar o projeto; 
+- Executar no vscode;
+
+Tem uma imagem na api disponivel no Docker Hub :https://hub.docker.com/repository/docker/rafaelalmeidadev/projetorafael
+
+Exemplo: Adicionar Categoria
 ```{json}
 {
   "id": 0,
